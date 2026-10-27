@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="api-base" content="http://127.0.0.1:5000/api">
+  <meta name="description" content="TruthLens AI provides transparent, model-based image and video authenticity screening.">
+  <title>TruthLens AI — Media authenticity, made transparent</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="TruthLens AI home"><span class="brand-mark" aria-hidden="true">◈</span><span>TruthLens <span>AI</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">☰</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Overview</a><a href="dashboard.html">Dashboard</a><a href="history.html">History</a><a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions"><a class="button button-primary" href="upload.html">Analyze media <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </header>
+  <main>
+    <section class="container hero">
+      <div>
+        <span class="eyebrow">Digital media screening</span>
+        <h1>Look closer.<br>Know what your <em>model knows.</em></h1>
+        <p class="hero-copy">A transparent workspace for examining image and video authenticity signals. Get evidence from a configured detector—not a claim of certainty.</p>
+        <div class="hero-actions"><a class="button button-primary" href="upload.html">Start an analysis <span aria-hidden="true">→</span></a><a class="button button-secondary" href="about.html">Explore the methodology</a></div>
+        <div class="hero-note"><span class="status">Model availability depends on local configuration</span></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="scan-frame">
+          <div class="scan-art">
+            <svg viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M75 48h-25v25M285 48h25v25M75 212H50v-25M285 212h25v-25" stroke="currentColor" stroke-width="2"/><path d="M110 82c0-13 10-23 23-23h94c13 0 23 10 23 23v96c0 13-10 23-23 23h-94c-13 0-23-10-23-23V82Z" stroke="currentColor" stroke-opacity=".65" stroke-width="2"/><circle cx="180" cy="112" r="20" stroke="currentColor" stroke-width="2"/><path d="m123 182 38-42 24 26 19-20 33 36H123Z" stroke="currentColor" stroke-width="2"/><path d="M34 130h56m180 0h56" stroke="currentColor" stroke-opacity=".4" stroke-dasharray="4 7"/></svg>
+          </div>
+          <div class="scan-line"></div>
+          <div class="scan-caption"><span>LOCAL ANALYSIS PIPELINE</span><span>READY TO INSPECT</span></div>
+        </div>
+        <div class="floating-score"><strong>Evidence first</strong><small>Scores are not certainty</small></div>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="section-intro"><span class="eyebrow">One workspace, clear boundaries</span><h2>Screen media with context.</h2><p>TruthLens keeps the workflow useful while being upfront about model coverage, processing limits and what an analysis cannot establish.</p></div>
+      <div class="grid grid-3">
+        <article class="card card-body feature-card"><span class="icon-tile" aria-hidden="true">▧</span><h3>Image screening</h3><p>Validate and inspect an image with a configured authenticity model. View its actual output and model identifier.</p><a class="button button-quiet" href="upload.html">Analyze an image →</a></article>
+        <article class="card card-body feature-card"><span class="icon-tile" aria-hidden="true">▷</span><h3>Video frame review</h3><p>Sample selected frames from a supported MP4. Results are frame-based screening—not temporal deepfake detection.</p><a class="button button-quiet" href="video.html">Analyze a video →</a></article>
+        <article class="card card-body feature-card"><span class="icon-tile" aria-hidden="true">⌁</span><h3>Traceable reports</h3><p>Review saved analysis metadata, processing time and model context without keeping your uploaded media.</p><a class="button button-quiet" href="history.html">View analysis history →</a></article>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="grid grid-2">
+        <div class="section-intro"><span class="eyebrow">How it works</span><h2>From upload to evidence.</h2><p>Media is validated before processing, passed to an explicitly configured model, and reported with its limitations. Temporary uploads are removed after the request.</p><a class="button button-secondary" href="about.html">Read about the technology</a></div>
+        <div class="steps">
+          <article class="card step-card"><span class="step-number">STEP 01</span><h3>Validate safely</h3><p>Check file type, signature and processing limits before decoding.</p></article>
+          <article class="card step-card"><span class="step-number">STEP 02</span><h3>Run configured model</h3><p>No detector is faked or silently substituted when configuration is absent.</p></article>
+          <article class="card step-card"><span class="step-number">STEP 03</span><h3>Interpret carefully</h3><p>See model scores and screening scope, not a definitive real-or-fake verdict.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="container section"><div class="notice"><strong>Responsible use:</strong> automated detectors can be wrong and may perform unevenly across content. Do not use a result alone to make consequential decisions. Avoid uploading sensitive or private media.</div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span data-year></span> TruthLens AI · Educational project</span><div class="footer-links"><a href="about.html">Limitations</a><a href="dashboard.html">Dashboard</a></div></div></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
